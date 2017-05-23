@@ -1,0 +1,8 @@
+{% extends "base.pug" %}
+
+{% block content %}
+h1= title|title
+{% for p in postlist %}
+p= p.title|title
+{% endfor %}
+{% endblock %}
